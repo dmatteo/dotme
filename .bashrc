@@ -2,7 +2,7 @@
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Java path export
-export JAVA_HOME=/usr/local/jdk1.7.0_45                                                               
+export JAVA_HOME=/usr/local/java/jdk1.7.0_45                                                               
 export PATH=$PATH:$JAVA_HOME/bin                 
 
 ### IntelliJ Path
@@ -18,7 +18,7 @@ function proml {
     local       WHITE="\[\033[0;37m\]"
 
     #PS1="[\u@\h \w]$GREEN \$(parse_git_branch)$WHITE\$ "
-    PS1="[\u@\h \W]$GREEN \$(parse_git_branch)$WHITE\$ "
+    PS1="\u@\h: [\W]$GREEN \$(parse_git_branch)$WHITE\$ "
     PS2='> '
     PS4='+ '
 }
