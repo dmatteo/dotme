@@ -24,3 +24,7 @@ function proml {
 }
 proml
 
+### Aliases
+alias ll='ls -alh'
+alias ls='ls --color=auto'
+

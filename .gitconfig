@@ -3,5 +3,9 @@
 	name = Your Name
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        st = status
+        ca = commit -a
 [core]
-	editor = vim
+        editor = vim
+[credential]
+	helper = cache --timeout=30000
