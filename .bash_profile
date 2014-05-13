@@ -2,11 +2,13 @@
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Java path export
-export JAVA_HOME=/usr/local/java/jdk1.7.0_45                                                               
+export JAVA_HOME=/usr/local/java/jdk1.7.0_55
+#export JAVA_HOME=/usr/local/java/jdk1.8.0_05
 export PATH=$PATH:$JAVA_HOME/bin                 
 
 ### IntelliJ Path
 export PATH="/home/domo/idea/bin:$PATH"
+export PATH="/home/domo/webstorm/bin:$PATH"
 
 # Displaying git branch inside prompt
 function parse_git_branch {
@@ -25,6 +27,11 @@ function proml {
 proml
 
 ### Aliases
-alias ll='ls -alh'
-alias ls='ls --color=auto'
+#alias ll='ls -alh'
+#alias ls='ls --color=auto'
+
+### Source .bashrc in those occasions where bash decides that it's not needed 
+### e.g. using tmux
+case $- in *i*) . ~/.bashrc;; esac
+
 
