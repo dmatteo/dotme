@@ -20,7 +20,8 @@ function proml {
     local       WHITE="\[\033[0;37m\]"
 
     #PS1="[\u@\h \w]$GREEN \$(parse_git_branch)$WHITE\$ "
-    PS1="\u@\h: [\W]$GREEN \$(parse_git_branch)$WHITE\$ "
+    #PS1="\u@\h: [\W]$GREEN \$(parse_git_branch)$WHITE\$ "
+    PS1="[\W]$GREEN \$(parse_git_branch)$WHITE\$ "
     PS2='> '
     PS4='+ '
 }
@@ -30,8 +31,5 @@ proml
 #alias ll='ls -alh'
 #alias ls='ls --color=auto'
 
-### Source .bashrc in those occasions where bash decides that it's not needed 
-### e.g. using tmux
-case $- in *i*) . ~/.bashrc;; esac
 
 
